@@ -93,7 +93,7 @@ if __name__ == '__main__':
         #time.sleep(10)
 
         now = time.localtime()
-        scan_name = "scan_%s-%s_%s:%s" %(now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min)
+        scan_name = "%s_%s_%s_%s" %(now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min)
         device.shell(f'screencap -p /sdcard/Download/scan_{scan_name}.png')
         print('Saved screenshot!')
         time.sleep(3)
