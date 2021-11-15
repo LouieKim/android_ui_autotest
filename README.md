@@ -43,5 +43,5 @@ adb shell rm /sdcard/Download/everon_charger.apk
 //폴더삭제   
 adb shell -r /sdcard/Download/test_folder   
 
-//화면캡쳐(파일이름 변경해주어야함)
+//화면캡쳐(파일이름 변경해주어야함)   
 adb shell screencap -p /sdcard/Download/screen_01.png & adb pull /sdcard/Download/screen_01.png C:\Users\hyeok\Desktop/screen_01.png
